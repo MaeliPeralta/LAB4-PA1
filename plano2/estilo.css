@@ -1,0 +1,201 @@
+/* ===== General ===== */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Barlow', 'Arial Narrow', Arial, sans-serif;
+  color: #333;
+  padding: 20px;
+}
+
+.pagina {
+  max-width: 400px;
+  margin: 0 auto;
+  padding: 24px 28px 30px;
+  border: 1px solid #9fb8cc;
+  background: url("fondo.jpg");
+}
+
+hr {
+  border: 0;
+  border-top: 1.5px solid #222;
+  margin: 10px 0;
+}
+
+h2 {
+  font-size: 0.7rem;
+  font-style: italic;
+  text-decoration: underline;
+  color: #222;
+  margin: 12px 0 7px;
+}
+
+mark {
+  background: yellow;
+}
+
+/* ===== Encabezado ===== */
+.encabezado {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 14px;
+}
+
+.logo {
+  width: 64px;
+  height: 64px;
+  border-radius: 50%;
+}
+
+h1 {
+  font-size: 1.7rem;
+  color: #0096e0;
+  background: white;
+  padding: 4px 16px;
+  border-radius: 4px;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.45);
+}
+
+.autor {
+  display: flex;
+  justify-content: flex-end;
+  font-size: 0.5rem;
+  font-weight: bold;
+  font-style: italic;
+  margin: 2px 0 14px;
+}
+
+.autor span {
+  background: white;
+  color: #222;
+  padding: 2px 8px;
+}
+
+/* ===== Introducción ===== */
+.cita {
+  font-size: 0.62rem;
+  font-style: italic;
+  line-height: 1.3;
+  color: #555;
+}
+
+.cita b {
+  font-style: normal;
+  color: #222;
+}
+
+/* ===== Recuadro con las 3 tarjetas (flexbox) ===== */
+.marco {
+  display: flex;
+  gap: 6px;
+  border: 3px solid #333;
+  border-radius: 4px;
+  padding: 8px;
+  margin-top: 8px;
+}
+
+.tarjeta {
+  flex: 1;
+  min-width: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: 2px solid #555;
+  border-radius: 6px;
+  overflow: hidden;
+  font-size: 0.5rem;
+  line-height: 1.2;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.25);
+}
+
+.tarjeta h3 {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+  padding: 4px 3px;
+  font-size: 0.52rem;
+  color: white;
+  text-align: center;
+}
+
+.tarjeta p {
+  width: 100%;
+  padding: 2px 5px;
+}
+
+.tarjeta em {
+  font-weight: 600;
+}
+
+/* Logo grande de "Definiciones" */
+.tarjeta img {
+  width: 46%;
+  max-width: 44px;
+  margin: auto 0 6px;
+}
+
+/* Logo pequeño junto al título de "Analogía" */
+.tarjeta h3 .icono {
+  width: 12px;
+  max-width: none;
+  margin: 0;
+  padding: 2px 3px;
+  border-radius: 3px;
+  background: white;
+}
+
+/* Alto de cada recuadro */
+.definiciones .tarjeta { min-height: 200px; }
+.analogia .tarjeta     { min-height: 174px; }
+
+/* ===== Colores de cada tarjeta ===== */
+.html { background: #f3ece9; }
+.css  { background: #e8edf1; }
+.js   { background: #ebf0e0; }
+
+.html h3 { background: #e04a26; }
+.css h3  { background: #0a78c2; }
+.js h3   { background: #6aa812; }
+
+/* ===== Imagen de la casa ===== */
+.casa {
+  display: flex;
+  justify-content: center;
+  margin: 12px 0;
+}
+
+.casa img {
+  width: 140px;
+  max-width: 100%;
+  background: #fff1ef;
+  border: 1px solid #c9c9c9;
+  border-radius: 2px;
+  box-shadow: 9px 9px 12px rgba(0, 0, 0, 0.55);
+}
+
+/* ===== Resumen ===== */
+.resumen {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+blockquote {
+  background: white;
+  border: 1px solid #bbb;
+  border-radius: 8px;
+  box-shadow: 2px 3px 6px rgba(0, 0, 0, 0.35);
+  padding: 10px 16px;
+  margin-top: 4px;
+  align-self: center;
+  text-align: center;
+  font-size: 0.6rem;
+  font-style: italic;
+  color: #444;
+}
